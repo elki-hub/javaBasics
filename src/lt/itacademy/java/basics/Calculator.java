@@ -10,7 +10,7 @@ public class Calculator {
     }
 
     public static void task10() {
-        System.out.println("---ENTER 'stop' TO END TASK 10! ---");
+        Messages.startTask("10", false);
 
         while (true) {
             System.out.print("Enter figure name (Rectangle/Triangle/Square) and the size of edge(s): ");
@@ -50,7 +50,7 @@ public class Calculator {
                             aT + bT + cT,
                             0.25 * Math.sqrt((aT + bT + cT) * (-aT + bT + cT) * (aT - bT + cT) * (aT + bT - cT)));
                 }
-                default -> System.out.println("Wrong input!");
+                default -> System.out.println("Wrong figure name!");
             }
 
 

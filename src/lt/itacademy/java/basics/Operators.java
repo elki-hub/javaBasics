@@ -10,7 +10,7 @@ public class Operators {
     }
 
     public static void task5() {
-        System.out.println("---ENTER 'stop' TO END TASK 5! ---");
+        Messages.startTask("5", true);
 
         while(true){
             System.out.print("Enter triangle sides: ");
@@ -40,7 +40,7 @@ public class Operators {
     }
 
     public static void task6() {
-        System.out.println("---ENTER 'stop' TO END TASK 6! ---");
+        Messages.startTask("6", true);
 
         while(true){
             System.out.print("Enter distance, fuel in the car, car fuel usage, fuel price: ");

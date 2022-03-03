@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class Art {
     public static void main(String[] args) {
+        Messages.startTask("bonus", false);
         Scanner sc= new Scanner(System.in);
         System.out.print("Enter the height of the tree: ");
         int height= sc.nextInt();
