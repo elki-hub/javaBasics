@@ -12,7 +12,7 @@ public class Loop {
     }
 
     public static void task7() {
-        System.out.println("---TASK 7! ---");
+        Messages.startTask("7", false);
         System.out.print("Enter days per year: ");
         int days = sc.nextInt();
         int hours = 0;
@@ -26,7 +26,7 @@ public class Loop {
         System.out.printf("There are %d hours or %d minutes in one year.\n", hours, min);
     }
     public static void task8() {
-        System.out.println("---TASK 8! ---");
+        Messages.startTask("8", false);
         System.out.print("Enter days per year: ");
         int days = sc.nextInt();
         int i = 0;
@@ -44,7 +44,7 @@ public class Loop {
         System.out.printf("There are %d hours or %d minutes in one year.\n", hours, min);
     }
     public static void task9() {
-        System.out.println("---ENTER 'stop' TO END TASK 9! ---");
+        Messages.startTask("9", true);
 
         while (true) {
             System.out.print("Enter number to calculate factorial: ");

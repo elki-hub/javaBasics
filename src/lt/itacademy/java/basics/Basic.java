@@ -8,6 +8,7 @@ public class Basic {
     }
 
     public static void task1(){
+        Messages.startTask("1", false);
         Scanner sc= new Scanner(System.in);    //System.in is a standard input stream
         System.out.print("Enter your name: ");
         String name= sc.nextLine();
@@ -15,9 +16,10 @@ public class Basic {
         String surname= sc.nextLine();
         System.out.print("Enter yor age: ");
         int age= sc.nextInt();
-        System.out.printf("Hello I am %s %s. I am attending IT Academy 2020! /n", name, surname);
+        System.out.printf("Hello I am %s %s. I am attending IT Academy 2020! \n", name, surname);
     }
     public static void task2(){
+        Messages.startTask("2", false);
         char value1 = 'H';
         short value2 = 3110;
         char value4 = 'w';

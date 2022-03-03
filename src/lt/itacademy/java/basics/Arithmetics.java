@@ -10,9 +10,8 @@ public class Arithmetics {
     }
 
     public static void task3(){
-        System.out.println("---ENTER 'stop' TO END TASK 3! ---");
+        Messages.startTask("3", true);
         while(true){
-            System.out.println("-----------");
             System.out.print("Enter cube's edge size: ");
             String output = sc.nextLine();
 
@@ -24,11 +23,12 @@ public class Arithmetics {
 
             System.out.println("Cube's volume: "+ a*a*a + "cm3");
             System.out.println("Cube's perimeter: "+ a*4 + "cm");
+            System.out.println("...........");
         }
     }
 
     public static void task4(){
-        System.out.println("---ENTER 'stop' TO END TASK 4! ---");
+        Messages.startTask("4", true);
         while(true){
             System.out.print("Enter feet and inches separated by space: ");
             String[] a = sc.nextLine().split(" ");
@@ -36,9 +36,11 @@ public class Arithmetics {
             if(a[0].equals("stop")){
                 break;
             }
-
-            double cm = (Double.parseDouble(a[0]) * 12 + Double.parseDouble(a[1])) * 2.54;
-            System.out.printf( "%s feet and %s inches = %.2f cm \n", a[0], a[1], cm);
+            else if(!a[0].trim().equals("")){
+                double cm = (Double.parseDouble(a[0]) * 12 + Double.parseDouble(a[1])) * 2.54;
+                System.out.printf( "%s feet and %s inches = %.2f cm \n", a[0], a[1], cm);
+            }
+            else System.out.println("Values can't be empty");
         }
 
     }
